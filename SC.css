@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+}
+
+:root {
+    --black-color: #2d3436;
+    --light-blue: #dff9fb;
+    --ice-blue: #c7ecee;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display #screen {
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    text-align: right;
+    color: var(--black-color);
+    background-color: var(--ice-blue);
+    padding-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: inset 2px 2px 3px #535c68, inset -2px -2px 2px #ecf0f1;
+}
+
+.btns {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btns .row button {
+    cursor: pointer;
+    font-size: 20px;
+    width: 100px;
+    height: 3rem;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--ice-blue);
+    color: var(--black-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btns .row button:hover {
+    box-shadow: inset 2px 2px 3px #535c68, inset -2px -2px 2px #ecf0f1;
+}
